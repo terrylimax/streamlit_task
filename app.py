@@ -69,9 +69,8 @@ def sidebar_input_features(df):
         df = df[df['BldgType'] == translation["DwellingType"][dwelling_type]]
     return df
 
-
-def download_csv(filtered_df):
 # Сохранение отфильтрованного DataFrame в CSV
+def download_csv(filtered_df):
     csv = filtered_df.to_csv(index=False).encode('utf-8')
     st.download_button(
         "Скачать отфильтрованный список в CSV",
@@ -86,11 +85,9 @@ def process_side_bar_inputs():
     # Пример использования функции
     if 'start_df' not in st.session_state:
         st.session_state.start_df = df # сохраняем данные в состоянии сессии
-
     filtered_df = sidebar_input_features(st.session_state.start_df) # фильтруем данные
-
     st.write(filtered_df) # выводим отфильтрованные данные
-
-
+    download_csv(filtered_df) # добавляем кнопку для скачивания отфильтрованных данных
+   
 if __name__ == "__main__":
     process_side_bar_inputs()
