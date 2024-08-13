@@ -5,18 +5,18 @@ Project's Author: Dmitrii Todorov
 
 Streamlit application link: https://realestatest.streamlit.app
 
-Here's a brief description of what you'll find in the application
+Here's a brief description of what you'll find in the application:
 
-LotArea: Lot size in square feet
+- LotArea: Lot size in square feet
 
-LotShape: General shape of property
+- LotShape: General shape of property
 
-BldgType: Type of dwelling
+- BldgType: Type of dwelling
 
-HouseStyle: Style of dwelling
+- HouseStyle: Style of dwelling
 
-YearRemodAdd: Remodel date
+- YearRemodAdd: Remodel date
 
-RoofStyle: Type of roof
+- RoofStyle: Type of roof
 
-BsmtCond: General condition of the basement
+- BsmtCond: General condition of the basement
